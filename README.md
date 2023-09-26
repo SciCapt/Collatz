@@ -1,6 +1,6 @@
-The basic function of this gives a 3D view of multiple numbers subjected to the Collatz conjecture. If the user doesn't already know what the Collatz conjecture is, the 3D graph will make essentially no sense.
+# Code I (3D Display):
 
-(It is perhaps most instructive to rotate the 3D view to view the 'Bounce Indices' along the horizontal ("x") axis, and the 'Starting Number' along the vertical ("y") axis. This will allow the user to simply view the length of the 'lists' (explained below) generated from a given starting number)
+3D Collatz Conjecture Display.py gives a 3D view of multiple numbers subjected to the Collatz conjecture. If the user doesn't already know what the Collatz conjecture is, the 3D graph will make essentially no sense (the axes are explained below with some examples in section II).
 
 Now assuming the user knows about the Collatz conjecture, the 3D graph will still appear excruciating at first. 
 The axis of 'Starting Number' will (relative to the input bounds) show the number used on its line. For example, if the bounds given were -10 to 10, the index of 0 would be -10, 1 would be -9, etc.
@@ -11,19 +11,27 @@ The axis of 'Bounce Value' simply refers to an individual number in this list. P
 
 EnchancedNumberTester is the driving function that tests for repeating lists and executes the proper algorithm if the current number is even/odd. I.e. divide by 2 if even or multiply by 3 and add 1 if the number is odd. It will constantly preform this process until it detects any of the repeat values. For positive numbers this is the typical 8,4,2,1 pattern, and for negatives there are many more (reference the repeat test function).
 
-None of this is supposed to act as any sort of proof of any patterns for the Collatz conjecture, but the deceptive simple nature of the problem makes it intresting to at least attmept to research. Below are some pictures of graphs created for various parts:
+# Code II (2D Graphs)
 
-Ia - Series for starting values 0-25 and the counts of the unique maximums
+## Cool Grapher.py
+
+This first 2D grapher returns two plots at the end. The first is essentially the flattened version of the 2D graph above showing all of the Collatz series for the values 0-(values-1) for the values variable in the code. The bottom graph shows the unique maximum values hit and the count of that maximum. Examples of these graphs are shown in section Ia and Ib.
+
+## Cool Grapher II.py
+
+This is perhaps the most unique experiment in my experimenting. Shown in section III below, this graph plots a starting value versus the length of its series up until it reaches a number that is a power of 2. Once I tested it up to a higher value, there were very clear curves and patterns as reiterated in section III.
+
+# Ia - Series for starting values 0-25 and the counts of the unique maximums
 
 ![Two graphs, the top on with the Collatz series for starting values 0-25, and on with the unique maximums and their counts](cool1.jpg)
 
 
-Ib - Series for starting values 0-1000 and the counts of the unique maximums
+# Ib - Series for starting values 0-1000 and the counts of the unique maximums
 
 ![Two graphs, the top on with the Collatz series for starting values 0-1000, and on with the unique maximums and their counts](cool3.jpg)
 
 
-II - 3D Plot of the 0-25 series
+# II - 3D Plot of the 0-25 series
 - Z axis: Starting value
 - Y axis: Running value in series
 - X axis: Position/Index in a series
@@ -35,7 +43,7 @@ II - 3D Plot of the 0-25 series
 ![](cool3d3.jpg)
 
 
-III - Interesting Pattern
+# III - Interesting Pattern
 
 One worthwhile pattern I found (that I haven't seen otherwise online) comes from recording an initial starting value of a series versus the number of iterations it took until that starting value became a power of two (and therefor would shortly reach one and would stop). Unexpectedly, there are some very clear curves and patterns that came out of this:
 
