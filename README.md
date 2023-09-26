@@ -17,9 +17,11 @@ Ia - Series for starting values 0-25 and the counts of the unique maximums
 
 ![Two graphs, the top on with the Collatz series for starting values 0-25, and on with the unique maximums and their counts](cool1.jpg)
 
+
 Ib - Series for starting values 0-1000 and the counts of the unique maximums
 
 ![Two graphs, the top on with the Collatz series for starting values 0-1000, and on with the unique maximums and their counts](cool3.jpg)
+
 
 II - 3D Plot of the 0-25 series
 - Z axis: Starting value
@@ -32,8 +34,9 @@ II - 3D Plot of the 0-25 series
 
 ![](cool3d3.jpg)
 
-III - Interesting Pattern
-One worthwhile pattern I found (that I haven't seen otherwise online) comes from recording an initial starting value of a series versus the number of iterations it took until that starting value became a power of two (and therefor would shortly reach one and would stop). Unexpectedly, there are some very clear curves and patterns that came out of this:
 
+III - Interesting Pattern
+
+One worthwhile pattern I found (that I haven't seen otherwise online) comes from recording an initial starting value of a series versus the number of iterations it took until that starting value became a power of two (and therefor would shortly reach one and would stop). Unexpectedly, there are some very clear curves and patterns that came out of this:
 
 ![](pattern.jpg)
