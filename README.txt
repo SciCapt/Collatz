@@ -10,3 +10,30 @@ This list of "bounces" has 8 values and therefore 8 indicies. So, one would expe
 The axis of 'Bounce Value' simply refers to an individual number in this list. Plotting this is more interesting than anything due to the patterns and 'mountains' created.
 
 EnchancedNumberTester is the driving function that tests for repeating lists and executes the proper algorithm if the current number is even/odd. I.e. divide by 2 if even or multiply by 3 and add 1 if the number is odd. It will constantly preform this process until it detects any of the repeat values. For positive numbers this is the typical 8,4,2,1 pattern, and for negatives there are many more (reference the repeat test function).
+
+None of this is supposed to act as any sort of proof of any patterns for the Collatz conjecture, but the deceptive simple nature of the problem makes it intresting to at least attmept to research. Below are some pictures of graphs created for various parts:
+
+Ia - Series for starting values 0-25 and the counts of the unique maximums
+
+![Two graphs, the top on with the Collatz series for starting values 0-25, and on with the unique maximums and their counts](cool1.jpg)
+
+Ib - Series for starting values 0-1000 and the counts of the unique maximums
+
+![Two graphs, the top on with the Collatz series for starting values 0-1000, and on with the unique maximums and their counts](cool3.jpg)
+
+II - 3D Plot of the 0-25 series
+- Z axis: Starting value
+- Y axis: Running value in series
+- X axis: Position/Index in a series
+
+![](cool3d1.jpg)
+
+![](cool3d2.jpg)
+
+![](cool3d3.jpg)
+
+III - Interesting Pattern
+One worthwhile pattern I found (that I haven't seen otherwise online) comes from recording an initial starting value of a series versus the number of iterations it took until that starting value became a power of two (and therefor would shortly reach one and would stop). Unexpectedly, there are some very clear curves and patterns that came out of this:
+
+
+![](pattern.jpg)
